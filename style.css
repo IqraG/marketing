@@ -346,16 +346,18 @@ big {
 
 #primary {
 	background: rgba(179, 198, 255, 0.2);
-	float: left;
+	float: right;
 	padding: 2.25em;
-	margin: 3em 5em;
+	margin: 3em;
 	max-width: 960px;
 	width: 90%;
 	clear: both;
 }
 
-#sidebar {
-	float: left;
+#secondary {
+	float: right;
+	max-width: 240px;
+	width: 17.5%;
 }
 
 .search-form {
@@ -366,7 +368,7 @@ big {
 ### Hearder Layout
 --------------------------------------------------------------*/
 #masthead {
-	background: black;
+	background: #000;
 	text-align: center;
 }
 
