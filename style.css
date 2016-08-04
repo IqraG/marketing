@@ -340,10 +340,34 @@ big {
 /*--------------------------------------------------------------
 ## Layout
 --------------------------------------------------------------*/
+#content {
+	background: #295EBB;
+}
+
 #primary {
-	margin: 3em;
+	background: rgba(179, 198, 255, 0.2);
+	float: left;
+	padding: 2.25em;
+	margin: 3em 5em;
 	max-width: 960px;
 	width: 90%;
+	clear: both;
+}
+
+#sidebar {
+	float: left;
+}
+
+.search-form {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+### Hearder Layout
+--------------------------------------------------------------*/
+#masthead {
+	background: black;
+	text-align: center;
 }
 
 /*--------------------------------------------------------------
