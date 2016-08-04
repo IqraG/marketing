@@ -24,6 +24,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 ----------------------------------------------------------------
 # Normalize
 # Typography
+	## Layout
 # Elements
 # Forms
 # Navigation
@@ -334,6 +335,15 @@ ins {
 
 big {
 	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+## Layout
+--------------------------------------------------------------*/
+#primary {
+	margin: 3em;
+	max-width: 960px;
+	width: 90%;
 }
 
 /*--------------------------------------------------------------
