@@ -26,13 +26,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 	## Layout
 		### Header Layout
-	## Sidebar Menu
 	## Media Queries
 # Elements
 # Forms
 # Navigation
 	## Links
 	## Menus
+		### Sidebar Menu
 # Accessibility
 # Alignments
 # Clearings
@@ -360,7 +360,8 @@ big {
 }
 
 #secondary {
-	background: rgba(179, 198, 255, 0.2);
+	background: #669999;
+	border: 1px dashed #FFF;
 	float: left;
 	max-width: 300px;
 	width: 21%;
@@ -371,44 +372,6 @@ big {
 --------------------------------------------------------------*/
 #masthead {
 	background: #000;
-	text-align: center;
-}
-
-/*--------------------------------------------------------------
-## Sidebar Menu
---------------------------------------------------------------*/
-.widget_nav_menu ul {
-	list-style-type: none;
-	display: block;
-	margin: 0;
-	padding: 0;
-	border: 1px solid #555;
-	height: 100%;
-} 
-
-.widget_nav_menu li {
-	border-bottom: 1px solid #555;
-	padding-left: 0.3em; 
-}
-
-.widget_nav_menu li:last-child {
-    border-bottom: none;
-}
-
-.widget_nav_menu li a {
-	display: block;
-	text-decoration: none;
-}
-
-.widget_nav_menu li:hover {
-	background-color: #555;
-}
-
-.widget_nav_menu li a:hover {
-	color: white;
-}
-
-.widget-title {
 	text-align: center;
 }
 
@@ -639,7 +602,7 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
-	border-right: 1px solid #FFF;
+	border-right: 1px dashed #FFF;
 	display: inline;
 }
 
@@ -664,6 +627,7 @@ a:active {
 
 .main-navigation ul ul {
 	background: #669999;
+	border: 1px dashed #FFF;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -684,6 +648,11 @@ a:active {
 
 .main-navigation ul ul li {
 	background: #669999;
+	border-bottom: 1px dashed #FFF;
+}
+
+.main-navigation ul ul li:last-child {
+	border-bottom: none;
 }
 
 .main-navigation li:hover > a,
@@ -749,6 +718,44 @@ a:active {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+/*--------------------------------------------------------------
+### Sidebar Menu
+--------------------------------------------------------------*/
+.widget_nav_menu ul {
+	list-style-type: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dashed #FFF;
+	height: 100%;
+} 
+
+.widget_nav_menu li {
+	border-bottom: 1px dashed #FFF;
+	padding-left: 0.3em;
+}
+
+.widget_nav_menu li:last-child {
+    border-bottom: none;
+}
+
+.widget_nav_menu li a {
+	display: block;
+	text-decoration: none;
+}
+
+.widget_nav_menu li:hover {
+	background-color: #555;
+}
+
+.widget_nav_menu li a:hover {
+	color: white;
+}
+
+.widget-title {
+	text-align: center;
 }
 
 /*--------------------------------------------------------------
