@@ -26,6 +26,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 	## Layout
 		### Header Layout
+	## Sidebar Menu
 	## Media Queries
 # Elements
 # Forms
@@ -370,6 +371,43 @@ big {
 --------------------------------------------------------------*/
 #masthead {
 	background: #000;
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Sidebar Menu
+--------------------------------------------------------------*/
+#nav_menu-3 ul {
+	list-style-type: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #555;
+} 
+
+#nav_menu-3 li {
+	border-bottom: 1px solid #555;
+	padding-left: 0.3em; 
+}
+
+#nav_menu-3 li:last-child {
+    border-bottom: none;
+}
+
+#nav_menu-3 li a {
+	display: block;
+	text-decoration: none;
+}
+
+#nav_menu-3 li:hover {
+	background-color: #555;
+}
+
+#nav_menu-3 li a:hover {
+	color: white;
+}
+
+.widget-title {
 	text-align: center;
 }
 
