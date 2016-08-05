@@ -25,6 +25,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 # Typography
 	## Layout
+		### Header Layout
+	## Media Queries
 # Elements
 # Forms
 # Navigation
@@ -355,7 +357,7 @@ big {
 }
 
 #secondary {
-	float: right;
+	float: left;
 	max-width: 240px;
 	width: 17.5%;
 }
@@ -370,6 +372,16 @@ big {
 #masthead {
 	background: #000;
 	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Media Queries
+--------------------------------------------------------------*/
+@media only screen and (max-width:1280px){
+	#primary,
+	#secondary {
+		float: none;
+	}
 }
 
 /*--------------------------------------------------------------
