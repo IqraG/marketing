@@ -348,22 +348,21 @@ big {
 
 #primary {
 	background: rgba(179, 198, 255, 0.2);
+	border: dashed #B0D0CF;
+	outline: solid #B0D0CF;
 	float: right;
 	padding: 2.25em;
-	margin: 3em;
+	margin: 1em 3em 0.15em 3em;
 	max-width: 960px;
 	width: 90%;
 	clear: both;
 }
 
 #secondary {
+	background: rgba(179, 198, 255, 0.2);
 	float: left;
-	max-width: 240px;
-	width: 17.5%;
-}
-
-.search-form {
-	clear: both;
+	max-width: 300px;
+	width: 21%;
 }
 
 /*--------------------------------------------------------------
