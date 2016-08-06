@@ -369,14 +369,14 @@ big {
 }
 
 /*--------------------------------------------------------------
-## Hearder
+## Header
 --------------------------------------------------------------*/
 #masthead {
 	background: url(imgs/vines.png);
 	text-align: center;
 }
-#masthead a {
-	color: #525354
+.site-title a {
+	color: #525354;
 }
 
 /*--------------------------------------------------------------
@@ -628,7 +628,7 @@ a:active {
 }
 
 .main-navigation li a:hover {
-	color: #c0ba58;
+	color: #f7fae2;
 }
 
 .main-navigation a {
@@ -636,6 +636,11 @@ a:active {
 	text-decoration: none;
 	padding: 0.5em;
 	display: inline-block;
+	color: #9ed55b;
+}
+
+.main-navigation a:visited {
+	color: #444;
 }
 
 .main-navigation ul ul {
@@ -776,7 +781,7 @@ a:active {
 }
 
 .widget_nav_menu li a:hover {
-	color: white;
+	color: #f7fae2;
 }
 
 .widget_nav_menu ul ul {
