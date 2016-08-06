@@ -370,11 +370,22 @@ big {
 }
 
 /*--------------------------------------------------------------
-### Hearder Layout
+## Hearder
 --------------------------------------------------------------*/
 #masthead {
 	background: #000;
 	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+#colophon {
+	background: #669999;
+    border: 1px dashed #FFF;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75em;
 }
 
 /*--------------------------------------------------------------
@@ -725,13 +736,16 @@ a:active {
 /*--------------------------------------------------------------
 ### Sidebar Menu
 --------------------------------------------------------------*/
+.widget_nav_menu {
+	height: 100%;
+}
+
 .widget_nav_menu ul {
 	list-style-type: none;
 	display: block;
 	margin: 0;
 	padding: 0;
 	border-bottom: 1px dashed #FFF;
-	height: 100%;
 } 
 
 .widget_nav_menu ul:last-child {
