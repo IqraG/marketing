@@ -45,7 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Dancing+Script|Josefin+Slab|Cookie|Great+Vibes|Playball|Tangerine|Julius+Sans+One|Niconne|Parisienne|Bad+Script|Cormorant+SC|Cormorant+Upright|Quicksand|);
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -379,13 +379,24 @@ big {
 	background: url(imgs/vines.png);
 	text-align: center;
 }
+
+.site-title {
+	text-align: center;
+}
 .site-title a {
 	color: #525354;
 	text-decoration: none;
+	font-size: 3em;
+	font-family: 'Poiret One', cursive;
 }
 
 .site-description {
 	text-align: center;
+	color: #7140C9;
+	font-size: 1.75em;
+	font-weight: 600;
+	font-family: 'Parisienne', cursive;
+	letter-spacing: 1px;
 }
 
 /*--------------------------------------------------------------
@@ -666,7 +677,6 @@ a:active {
 
 .main-navigation ul ul ul {
 	background: #9c7c6f;
-		border-radius: 0.06em;
 	left: -999em;
 	top: 0;
 }
