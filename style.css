@@ -623,10 +623,6 @@ a:active {
 	display: inline;
 }
 
-.main-navigation li:last-child {
-	border-right: none; 
-}
-
 .main-navigation li:hover {
 	background: #dcc3af;
 }
@@ -643,8 +639,8 @@ a:active {
 }
 
 .main-navigation ul ul {
-	background: #669999;
-	border: 1px dashed #FFF;
+	background: #9c7c6f;
+	border: 1px solid #774837;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -654,7 +650,7 @@ a:active {
 }
 
 .main-navigation ul ul ul {
-	background: #669999;
+	background: #9c7c6f;
 	left: -999em;
 	top: 0;
 }
@@ -664,12 +660,8 @@ a:active {
 } 
 
 .main-navigation ul ul li {
-	background: #669999;
-	border-bottom: 1px dashed #FFF;
-}
-
-.main-navigation ul ul li:last-child {
-	border-bottom: none;
+	background: #9c7c6f;
+	border: 1px solid #774837;
 }
 
 .main-navigation li:hover > a,
