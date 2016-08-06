@@ -381,11 +381,13 @@ big {
 ## Footer
 --------------------------------------------------------------*/
 #colophon {
-	background: #669999;
-    border: 1px dashed #FFF;
+	background: #666;
+    border: 1px dashed #669999;
     width: 100%;
     text-align: center;
     font-size: 0.75em;
+    position: fixed;
+    bottom: 0;
 }
 
 /*--------------------------------------------------------------
