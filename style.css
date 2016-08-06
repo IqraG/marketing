@@ -385,7 +385,7 @@ big {
 ## Header
 --------------------------------------------------------------*/
 #masthead {
-	background: url(imgs/vines.png);
+	background: url(imgs/vines.png); /* Got image from Pixabay.com, labeled for commerical use*/
 	text-align: center;
 }
 
