@@ -361,7 +361,9 @@ big {
 
 #secondary {
 	background: #669999;
-	border: 1px dashed #FFF;
+	border-bottom: 1px dashed #FFF;
+	border-left: 1px dashed #FFF;
+	border-right: 1px dashed #FFF;
 	float: left;
 	max-width: 300px;
 	width: 21%;
@@ -732,9 +734,17 @@ a:active {
 	height: 100%;
 } 
 
+.widget_nav_menu ul:last-child {
+	border-bottom: none;
+}
+
 .widget_nav_menu li {
 	border-bottom: 1px dashed #FFF;
 	padding-left: 0.3em;
+}
+
+.widget_nav_menu li:first-child {
+	border-top: 1px dashed #FFF;
 }
 
 .widget_nav_menu li:last-child {
@@ -752,6 +762,34 @@ a:active {
 
 .widget_nav_menu li a:hover {
 	color: white;
+}
+
+.widget_nav_menu ul ul {
+	display: none;
+}
+.widget_nav_menu ul ul ul {
+	display: none;
+}
+.widget_nav_menu ul ul a {
+    line-height: 100%;
+    padding: 10px;
+    text-align: left;
+    width: auto;
+}
+.widget_nav_menun ul ul li {
+}
+.widget_nav_menu li:hover > a {
+}
+.widget_nav_menu ul ul :hover > a {
+}
+.widget_nav_menu ul ul a:hover {
+}
+.widget_nav_menu ul li:hover > ul {
+	display: block;
+}
+.sub-menu {
+	clear: both;
+	left: 100%
 }
 
 .widget-title {
