@@ -344,26 +344,25 @@ big {
 ## Layout
 --------------------------------------------------------------*/
 #content {
-	background: #295EBB;
+	background: #f7fae2;
 }
 
 #primary {
-	background: rgba(179, 198, 255, 0.2);
-	border: dashed #B0D0CF;
-	outline: solid #B0D0CF;
+	background: rgba(179, 222, 101, 0.8);
+	outline: 1em double #774837;;
 	float: right;
 	padding: 2.25em;
-	margin: 1em 3em 0.15em 3em;
+	margin: 2em 3em 0.15em 3em;
 	max-width: 960px;
 	width: 90%;
 	clear: both;
 }
 
 #secondary {
-	background: #669999;
-	border-bottom: 1px dashed #FFF;
-	border-left: 1px dashed #FFF;
-	border-right: 1px dashed #FFF;
+	background: #9c7c6f;
+	border-bottom: 3px solid #774837;
+	border-left: 3px solid #774837;
+	border-right: 3px solid #774837;
 	float: left;
 	max-width: 300px;
 	width: 21%;
@@ -373,8 +372,11 @@ big {
 ## Hearder
 --------------------------------------------------------------*/
 #masthead {
-	background: #000;
+	background: url(imgs/vines.png);
 	text-align: center;
+}
+#masthead a {
+	color: #525354
 }
 
 /*--------------------------------------------------------------
@@ -603,8 +605,8 @@ a:active {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
-	background: #669999;
-	border: 1px dashed #FFF;
+	background: #9c7c6f;
+	border: 3px solid #774837;
 }
 
 .main-navigation ul {
@@ -617,7 +619,7 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
-	border-right: 1px dashed #FFF;
+	border-right: 3px solid #774837;
 	display: inline;
 }
 
@@ -626,11 +628,11 @@ a:active {
 }
 
 .main-navigation li:hover {
-	background: #00264D;
+	background: #dcc3af;
 }
 
 .main-navigation li a:hover {
-	color: #FFF;
+	color: #c0ba58;
 }
 
 .main-navigation a {
@@ -742,12 +744,16 @@ a:active {
 	height: 100%;
 }
 
+.widget_nav_menu a:visited {
+	color: #444;
+}
+
 .widget_nav_menu ul {
 	list-style-type: none;
 	display: block;
 	margin: 0;
 	padding: 0;
-	border-bottom: 1px dashed #FFF;
+	border-bottom: 1px solid #774837;
 } 
 
 .widget_nav_menu ul:last-child {
@@ -755,12 +761,12 @@ a:active {
 }
 
 .widget_nav_menu li {
-	border-bottom: 1px dashed #FFF;
+	border-bottom: 1px solid #774837;
 	padding-left: 0.3em;
 }
 
 .widget_nav_menu li:first-child {
-	border-top: 1px dashed #FFF;
+	border-top: 1px solid #774837;
 }
 
 .widget_nav_menu li:last-child {
@@ -770,10 +776,11 @@ a:active {
 .widget_nav_menu li a {
 	display: block;
 	text-decoration: none;
+	color: #9ed55b;
 }
 
 .widget_nav_menu li:hover {
-	background-color: #555;
+	background-color: #dcc3af;
 }
 
 .widget_nav_menu li a:hover {
