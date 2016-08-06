@@ -45,7 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Dancing+Script|Josefin+Slab|Cookie|Great+Vibes|Playball|Tangerine|Julius+Sans+One|Niconne|Parisienne|Bad+Script|Cormorant+SC|Cormorant+Upright|Quicksand|);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Dancing+Script|Josefin+Slab|Cookie|Great+Vibes|Playball|Tangerine|Julius+Sans+One|Niconne|Parisienne|Bad+Script|Cormorant+SC|Cormorant+Upright|Quicksand|Reem+Kufi|);
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -269,9 +269,10 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
+	font-weight: 600;
 	line-height: 1.5;
 }
 
@@ -283,12 +284,17 @@ h5,
 h6 {
 	clear: both;
 	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
 }
 
 p {
 	margin-bottom: 1.5em;
 	text-align: justify;
 	font-size: 1em;
+}
+
+.entry-footer {
+	text-align: center;
 }
 
 dfn,
@@ -300,6 +306,9 @@ i {
 
 blockquote {
 	margin: 0 1.5em;
+	font-family: 'Niconne', cursive;
+	font-size: 1.3em;
+	font-weight: 400;
 }
 
 address {
@@ -356,7 +365,7 @@ big {
 	border: 1em double #774837;;
 	float: right;
 	padding: 2.25em;
-	margin: 2em 3em 0.15em 3em;
+	margin: 2em 3em;
 	max-width: 960px;
 	width: 90%;
 	clear: both;
@@ -367,7 +376,7 @@ big {
 	border: 3px solid #774837;
 	border-radius: 0.6em;
 	float: left;
-	margin-top: 0.04em;
+	margin-top: 1px;
 	max-width: 300px;
 	width: 21%;
 }
@@ -384,10 +393,18 @@ big {
 	text-align: center;
 }
 .site-title a {
-	color: #525354;
+	color: #ed5a74;
 	text-decoration: none;
 	font-size: 3em;
 	font-family: 'Poiret One', cursive;
+}
+
+.site-title a:visited {
+	color: #ed5a74;
+}
+
+.site-title a:hover {
+	color: #86a258;
 }
 
 .site-description {
@@ -410,11 +427,13 @@ big {
     font-size: 0.75em;
     position: fixed;
     bottom: 0;
+    color: #f7fae2;
 }
 
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
+/*Breakpoint for screen at 1280px*/
 @media only screen and (max-width:1280px){
 	#primary,
 	#secondary {
@@ -466,7 +485,7 @@ ol {
 }
 
 ul {
-	list-style: disc;
+	list-style: ;
 }
 
 ol {
@@ -628,6 +647,9 @@ a:active {
 	background: #9c7c6f;
 	border: 3px solid #774837;
 	border-radius: 0.6em;
+	text-transform: uppercase;
+	font-family: 'Reem Kufi', sans-serif;
+	font-weight: 400;
 }
 
 .main-navigation ul {
@@ -760,6 +782,9 @@ a:active {
 --------------------------------------------------------------*/
 .widget_nav_menu {
 	height: 100%;
+	font-family: 'Reem Kufi', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .widget_nav_menu a:visited {
