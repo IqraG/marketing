@@ -18,6 +18,8 @@
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'marketing' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'marketing' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'marketing' ), 'marketing', '<a href="http://ca.linkedin.com/in/iqra-ghazi-9b0884b4/" rel="designer">Iqra Ghazi</a>' ); ?>
+			<?php $options=get_option( 'mrkting_options_settings' ); // Allows users to enter their name in footer using the option page
+				echo ' | Used by: ' . $options['mrkting_text_field']; ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
