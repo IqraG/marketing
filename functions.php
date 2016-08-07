@@ -108,6 +108,7 @@ function marketing_scripts() {
 
 	wp_enqueue_script( 'marketing-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	//Adds Google Fonts
 	wp_enqueue_style( 'marketing-google-fonts', 'http://fonts.googleapis.com/css?family=Quicksand|Julius+Sans+One|Poiret+One|Parisienne|Niconne|Reem+Kufi');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
