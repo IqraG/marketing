@@ -293,10 +293,6 @@ p {
 	font-size: 1em;
 }
 
-.entry-footer {
-	text-align: center;
-}
-
 dfn,
 cite,
 em,
@@ -450,6 +446,23 @@ big {
 		width: 100%;
 	}
 }
+/* Primay Menu at 800px */
+@media screen and (max-width: 800px) {
+	.menu-toggle {
+		display: block;
+	}
+	.main-navigation ul {
+		display: none;
+	}
+	.toggled.main-navigation ul {
+		display: inline-block;
+	}
+}
+/* Primary Menu will not show at screen greater than 800px */
+@media screen and (min-width: 800px) {
+	.menu-toggle {
+		display: none;
+	}
 
 /*--------------------------------------------------------------
 # Elements
@@ -748,26 +761,15 @@ a:active {
 .main-navigation .current-menu-ancestor > a {
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
+}
+
+.nav-links {
+	display: none;
 }
 
 .comment-navigation .nav-previous,
@@ -998,6 +1000,18 @@ a:active {
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+}
+
+.entry-footer {
+	text-align: center;
+}
+
+.entry-footer a {
+	margin-right: 0.5em;
+}
+
+.entry-meta {
+	display: none;
 }
 
 .page-links {
