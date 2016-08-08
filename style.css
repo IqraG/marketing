@@ -446,7 +446,7 @@ big {
 		width: 100%;
 	}
 }
-/* Primay Menu at 800px */
+/* Display Primay Menu at 800px */
 @media screen and (max-width: 800px) {
 	.menu-toggle {
 		display: block;
