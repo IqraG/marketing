@@ -114,6 +114,8 @@ function marketing_scripts() {
 	//FlexSlider
 	wp_enqueue_script('flexslider', get_template_directory_uri() .'/js/jquery.flexslider.js', array('jquery'));
 	wp_enqueue_script('flexslider-init', get_template_directory_uri() . '/js/flexslider-init.js', array( 'jquery'));
+	//FlexSlider Stylesheet
+	wp_enqueue_style( 'flexslider-style', get_template_directory_uri() . '/js/css/flexslider.css' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
