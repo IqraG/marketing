@@ -111,6 +111,10 @@ function marketing_scripts() {
 	//Adds Google Fonts
 	wp_enqueue_style( 'marketing-google-fonts', 'http://fonts.googleapis.com/css?family=Quicksand|Julius+Sans+One|Poiret+One|Parisienne|Niconne|Reem+Kufi');
 
+	//FlexSlider
+	wp_enqueue_script('flexslider', get_template_directory_uri() .'/js/jquery.flexslider.js', array('jquery'));
+	wp_enqueue_script('flexslider-init', get_template_directory_uri() . '/js/flexslider-init.js', array( 'jquery'));
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
