@@ -26,7 +26,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 	## Layout
 		## Header
-	## Media Queries
 # Elements
 # Forms
 # Navigation
@@ -36,6 +35,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
+# Media Queries
 # Widgets
 # Content
 	## Posts and pages
@@ -359,12 +359,11 @@ big {
 	background: rgba(179, 222, 101, 0.8);
 	border-radius: 5em;
 	border: 1em double #774837;;
-	float: right;
+	float: left;
 	padding: 2.25em;
 	margin: 2em 3em;
 	max-width: 960px;
 	width: 90%;
-	clear: both;
 }
 
 #secondary {
@@ -374,7 +373,7 @@ big {
 	float: left;
 	margin-top: 1px;
 	max-width: 300px;
-	width: 21%;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -432,19 +431,6 @@ big {
     position: fixed; /* Keeps footer at bottom of screen*/
     bottom: 0;
     color: #f7fae2;
-}
-
-/*--------------------------------------------------------------
-## Media Queries
---------------------------------------------------------------*/
-/*Breakpoint for screen at 1280px*/
-@media only screen and (max-width:1280px){
-	#primary,
-	#secondary {
-		float: none;
-		margin: auto;
-		width: 100%;
-	}
 }
 
 /*--------------------------------------------------------------
@@ -654,6 +640,7 @@ a:active {
 	text-transform: uppercase;
 	font-family: 'Reem Kufi', sans-serif;
 	font-weight: 400;
+	text-align: center;
 }
 
 .main-navigation ul {
@@ -661,13 +648,13 @@ a:active {
 	list-style: none;
 	margin: 0 auto;
 	padding-left: 0;
+	text-align: center;
+	width: auto;
 }
 
 .main-navigation li {
-	float: left;
-	position: relative;
 	border-right: 3px solid #774837;
-	display: inline;
+	display: inline-block;
 }
 
 .main-navigation li:hover {
@@ -744,12 +731,7 @@ a:active {
 .main-navigation .current-menu-ancestor > a {
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
+/* Small Menu */
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
@@ -956,6 +938,40 @@ a:active {
 .site-content:after,
 .site-footer:after {
 	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+/* Breakpoint for screen at 1280px */
+@media only screen and (max-width:1280px){
+	#primary,
+	#secondary {
+		float: none;
+		margin: auto;
+		width: 100%;
+	}
+}
+
+/* Small menu. */
+@media screen and (max-width:840px){
+	.menu-toggle {
+		display: block;
+	}
+	.main-navigation.toggled ul {
+		display: block;
+		position: absolute;
+		background: red;
+		border: none;
+		text-align: left;
+	}
+	.main-navigation ul {
+		display: none;
+	}
+	.main-navigation li {
+		float: none;
+		display: block;
+	}
 }
 
 /*--------------------------------------------------------------
