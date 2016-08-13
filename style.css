@@ -683,7 +683,6 @@ a:active {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
-	top: 1.5em;
 	left: -999em;
 	z-index: 99999;
 }
@@ -964,8 +963,7 @@ a:active {
 	.main-navigation.toggled ul {
 		display: block;
 		position: absolute;
-		background: red;
-		border: none;
+		background: #9c7c6f;
 		text-align: left;
 	}
 	.main-navigation ul {
@@ -974,6 +972,13 @@ a:active {
 	.main-navigation li {
 		float: none;
 		display: block;
+		border-bottom: 1px solid #774837;
+	}
+	.main-navigation ul ul:hover {
+		left: 100%;
+	}
+	.main-navigation ul ul li:hover {
+		left: 100%;
 	}
 }
 
