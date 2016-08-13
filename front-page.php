@@ -37,20 +37,20 @@ get_sidebar(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="<?php echo get_template_directory_uri() ?>/imgs/pic.png" />
-    </li>
-    <li>
-      <img src="slide2.jpg" />
-    </li>
-    <li>
-      <img src="slide3.jpg" />
-    </li>
-    <li>
-      <img src="slide4.jpg" />
-    </li>
-  </ul>
+	  <ul class="slides">
+	    <li>
+	      <img src="<?php echo get_template_directory_uri() ?>/imgs/parsley.jpg" />
+	    </li>
+	    <li>
+	      <img src="<?php echo get_template_directory_uri() ?>/imgs/herbs.jpg" />
+	    </li>
+	    <li>
+	      <img src="<?php echo get_template_directory_uri() ?>/imgs/spoon.jpg" />
+	    </li>
+	    <li>
+	      <img src="<?php echo get_template_directory_uri() ?>/imgs/basket.jpg" />
+	    </li>
+	  </ul>
 </div>
 
 <?php

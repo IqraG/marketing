@@ -58,7 +58,7 @@
   clear: both;
   visibility: hidden;
   line-height: 0;
-  height: 0;
+  height: auto;
 }
 html[xmlns] .flexslider .slides {
   display: block;
@@ -90,7 +90,7 @@ html[xmlns] .flexslider .slides {
   zoom: 1;
 }
 .flexslider .slides img {
-  height: auto;
+  height: 400px;
   -moz-user-select: none;
 }
 .flex-viewport {
@@ -132,7 +132,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a:before {
   font-family: "flexslider-icon";
-  font-size: 40px;
+  font-size: 35px;
   display: inline-block;
   content: '\f001';
   color: rgba(0, 0, 0, 0.8);
