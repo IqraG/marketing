@@ -701,6 +701,7 @@ a:active {
 .main-navigation ul ul li {
 	background: #9c7c6f;
 	border: 1px solid #774837;
+	display: block;
 }
 
 .main-navigation li:hover > a,
@@ -936,13 +937,11 @@ a:active {
 .comment-content:after,
 .site-header:after,
 .site-content:after,
-.site-footer:after {
-	clear: both;
-}
-
+.site-footer:after,
 .flexslider {
 	clear: both;
 }
+
 
 /*--------------------------------------------------------------
 # Media Queries
