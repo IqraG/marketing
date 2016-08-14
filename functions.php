@@ -123,6 +123,13 @@ function marketing_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'marketing_scripts' );
 
+function font_setting() {
+	$options = get_option( 'mrkting_options_settings' );
+		if (isset($options['mrkting_radio_field']) =='1'){ ?>
+			<h1 class="entry-title"></h1> }
+			<?php
+	}
+
 /**
  * Implement the Custom Header feature.
  */
