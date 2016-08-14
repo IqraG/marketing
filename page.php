@@ -12,7 +12,8 @@
  * @package Marketing
  */
 
-get_header(); ?>
+get_header(); 
+get_sidebar(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -22,8 +23,11 @@ get_header(); ?>
 
 				get_template_part( 'template-parts/content', 'page' ); ?>
 
-				<div id="pageimg">
-				</div>
+				<?php
+				$options = get_option( 'mrkting_options_settings' );
+					if (isset($options['mrkting_checkbox_image']) =='on'){
+						echo'<div id="pageimg"></div>';} 
+				?>
 
 				<?php
 
@@ -39,5 +43,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
