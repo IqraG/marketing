@@ -955,6 +955,27 @@ a:active {
 	}
 }
 
+/* iPad and Tablet 786px */
+@media only screen and (max-width:786px){
+	.site-title a {
+		font-size: 1.8em;
+	}
+	.site-description {
+		font-size: 1.15em;
+	}
+}
+
+
+/* Moblie Portrait Orientation at 480px*/
+@media only screen and (max-width:480px){
+ 	#secondary {
+		float: none;
+		max-width: 100%;
+		text-align: center;
+		font-size: 1.25em;
+	}
+}
+
 /* Small menu. */
 @media screen and (max-width:840px){
 	.menu-toggle {
