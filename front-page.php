@@ -30,6 +30,7 @@ get_sidebar(); ?>
 					<h2 class="post-title"><?php the_title(); ?></h2>
 					<div class="entry-content">
 						<?php the_content(); ?>
+						<?php body_font(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## --><?php
 			endwhile; endif; ?>

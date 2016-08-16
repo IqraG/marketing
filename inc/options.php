@@ -63,27 +63,10 @@ function mrkting_settings_init() {
 	function mrkting_checkbox_image_render() { 
 		$options = get_option( 'mrkting_options_settings' ); 
 			?>
-		<input type="checkbox" checked="checked" name="mrkting_options_settings[mrkting_checkbox_image]" 
+		<input type="checkbox" name="mrkting_options_settings[mrkting_checkbox_image]" 
 			<?php if(isset($options['mrkting_checkbox_image'])) checked( 'on', ($options['mrkting_checkbox_image']) ) ;?> 
 				value="on" />
 		<label>Turn it On</label> 
-		<?php
-	}
-
-	add_settings_field( //Option to turn on/off comments
-	'mrkting_checkbox_comments', 
-	'Turn Comments', 
-	'mrkting_checkbox_comments_render', 
-	'theme_options', 
-	'mrkting_options_page'
-	);
-	function mrkting_checkbox_comments_render() { 
-		$options = get_option( 'mrkting_options_settings' );
-			?>
-		<input type="checkbox" checked="checked" name="mrkting_options_settings[mrkting_checkbox_comments]" 
-			<?php if(isset($options['mrkting_checkbox_comments'])) checked( 'on', ($options['mrkting_checkbox_comments']) ) ;?> 
-				value="on" />
-		<label>On</label>
 		<?php
 	}
 

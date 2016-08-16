@@ -22,14 +22,11 @@ get_sidebar(); ?>
 			while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content', 'page' ); ?>
-
+				
 				<?php
 				$options = get_option( 'mrkting_options_settings' );
-					if (isset($options['mrkting_checkbox_image']) =='on'){
-						echo'<div id="pageimg"></div>';} 
-				?>
-
-				<?php
+					if ($options['mrkting_checkbox_image'] == 'on'){
+						echo '<div id="pageimg"></div>';} 
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
