@@ -128,9 +128,18 @@ function body_font() {
 		if ($options['mrkting_radio_field'] == 2){ ?>
 			<style> 
 				body {
+					font-family: 'Julius Sans One';
+				}
+			</style> 
+		<?php }
+		elseif ($options['mrkting_radio_field'] == 3) {?>
+			<style> 
+				body {
 					font-family: 'Parisienne';
 				}
-			</style> <?php }
+			</style> 
+		<?php 
+		}
 }
 /**
  * Implement the Custom Header feature.

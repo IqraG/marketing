@@ -35,7 +35,7 @@ function mrkting_settings_init() {
 
 	//Option to turn to header type
 	add_settings_field( 'mrkting_radio_field', 
-		'Choose Header Style', 
+		'Choose Header Font for Front Page', 
 		'mrkting_radio_field_render', 
 		'theme_options', 
 		'mrkting_options_page'
@@ -44,11 +44,11 @@ function mrkting_settings_init() {
 		$options = get_option( 'mrkting_options_settings' );
 		?>
 		<input type="radio" checked="checked" name="mrkting_options_settings[mrkting_radio_field]"<?php if(isset($options['mrkting_radio_field'])) checked( $options['mrkting_radio_field'], 1 ); //Header 1 is checked ?> 
-				value="1" /><label>Header 1</label><br />
+				value="1" /><label>Quicksand</label><br />
 		<input type="radio" name="mrkting_options_settings[mrkting_radio_field]"<?php if(isset($options['mrkting_radio_field'])) checked( $options['mrkting_radio_field'], 2 ); ?>
-				value="2" /><label>Header 2</label><br />
+				value="2" /><label>Poiret One</label><br />
 		<input type="radio"name="mrkting_options_settings[mrkting_radio_field]"<?php if(isset($options['mrkting_radio_field'])) checked( $options['mrkting_radio_field'], 3 ); ?>
-				value="3" /><label>Header 3</label>
+				value="3" /><label>Parisienne</label>
 		<?php
 	}
 
