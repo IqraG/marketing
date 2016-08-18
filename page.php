@@ -24,6 +24,7 @@ get_sidebar(); ?>
 				get_template_part( 'template-parts/content', 'page' ); ?>
 				
 				<?php
+				// Option to add/remove image at the bottom of the page using theme options
 				$options = get_option( 'mrkting_options_settings' );
 					if ($options['mrkting_checkbox_image'] == 'on'){
 						echo '<div id="pageimg"></div>';} 
