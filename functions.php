@@ -126,6 +126,7 @@ add_action( 'wp_enqueue_scripts', 'marketing_scripts' );
 // Option to change content font on homepage
 function body_font() {
 	$options = get_option( 'mrkting_options_settings' );
+		// If option 2 is selected, display this font
 		if ($options['mrkting_radio_field'] == 2){ ?>
 			<style> 
 				body {
@@ -133,10 +134,11 @@ function body_font() {
 				}
 			</style> 
 		<?php }
+		// If option 3 is selected, display this font
 		elseif ($options['mrkting_radio_field'] == 3) {?>
 			<style> 
 				body {
-					font-family: 'Parisienne';
+					font-family: 'Poiret One';
 				}
 			</style> 
 		<?php 
@@ -167,5 +169,7 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-// Call the file that controls the theme options
-require get_stylesheet_directory() .'/inc/options.php';
+/**
+ * Call the file that controls the theme options
+ */
+require get_template_directory() .'/inc/options.php';
