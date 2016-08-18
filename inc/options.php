@@ -5,7 +5,7 @@ function mrkting_add_submenu() {
 }
 add_action( 'admin_menu', 'mrkting_add_submenu' );
 
-//Allows users to enter their name in the Footer
+
 function mrkting_settings_init() { 
 	register_setting ('theme_options', 'mrkting_options_settings');
 	add_settings_section(
@@ -15,13 +15,14 @@ function mrkting_settings_init() {
 	'theme_options'
 	);
 	function mrkting_options_page_callback() { 
-		echo 'You can enter your name in the footer, choose header for posts headings, and choose your background colour';
+		// Options page description
+		echo 'You can enter your name in the footer, choose to display page image, and choose font for homepage content';
 	}
 
 	//Allows users to enter their name in the Footer
 	add_settings_field( 
 	'mrkting_text_field',
-	'Enter Your Name',
+	'Enter Your Name', // Field to enter name
 	'mrkting_text_field_render',
 	'theme_options',
 	'mrkting_options_page'
@@ -43,12 +44,12 @@ function mrkting_settings_init() {
 	function mrkting_radio_field_render() { 
 		$options = get_option( 'mrkting_options_settings' );
 		?>
-		<input type="radio" checked="checked" name="mrkting_options_settings[mrkting_radio_field]"<?php if(isset($options['mrkting_radio_field'])) checked( $options['mrkting_radio_field'], 1 ); //Header 1 is checked ?> 
+		<input type="radio" name="mrkting_options_settings[mrkting_radio_field]"<?php if(isset($options['mrkting_radio_field'])) checked( $options['mrkting_radio_field'], 1 ); ?> 
 				value="1" /><label>Quicksand</label><br />
 		<input type="radio" name="mrkting_options_settings[mrkting_radio_field]"<?php if(isset($options['mrkting_radio_field'])) checked( $options['mrkting_radio_field'], 2 ); ?>
-				value="2" /><label>Poiret One</label><br />
+				value="2" /><label>Julius Sans One</label><br />
 		<input type="radio"name="mrkting_options_settings[mrkting_radio_field]"<?php if(isset($options['mrkting_radio_field'])) checked( $options['mrkting_radio_field'], 3 ); ?>
-				value="3" /><label>Parisienne</label>
+				value="3" /><label>Poiret One</label>
 		<?php
 	}
 

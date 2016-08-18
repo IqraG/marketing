@@ -111,10 +111,10 @@ function marketing_scripts() {
 	//Adds Google Fonts
 	wp_enqueue_style( 'marketing-google-fonts', 'http://fonts.googleapis.com/css?family=Quicksand|Julius+Sans+One|Poiret+One|Parisienne|Niconne|Reem+Kufi');
 
-	//FlexSlider
+	//Enqueues FlexSlider
 	wp_enqueue_script('flexslider', get_template_directory_uri() .'/js/jquery.flexslider.js', array('jquery'));
 	wp_enqueue_script('flexslider-init', get_template_directory_uri() . '/js/flexslider-init.js', array( 'jquery'));
-	//FlexSlider Stylesheet
+	//Enqueues FlexSlider Stylesheet
 	wp_enqueue_style( 'flexslider-style', get_template_directory_uri() . '/js/css/flexslider.css' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -123,6 +123,7 @@ function marketing_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'marketing_scripts' );
 
+// Option to change content font on homepage
 function body_font() {
 	$options = get_option( 'mrkting_options_settings' );
 		if ($options['mrkting_radio_field'] == 2){ ?>

@@ -34,31 +34,37 @@ get_sidebar(); ?>
 						<?php body_font(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## --><?php
-			endwhile; endif; ?>
+			endwhile; endif; 
+			wp_reset_query(); // Ends the query ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<!-- Flexslider -->
 	<div class="flexslider">
-	  <ul class="slides">
-	   <?php
-    		$flexslider_query = new WP_Query(array( 
-    			'posts_per_page' => 5,
-    			'orderby' => 'date',
-    			'ignore_sticky_posts' => 1
-    			) );
-    		if ($flexslider_query->have_posts()): while ($flexslider_query->have_posts()): $flexslider_query->the_post(); ?>
-    			<li>
-	    			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-	        			<?php the_post_thumbnail(); ?>
-	    			</a>
-    			</li>
-		<?php 
-		endwhile; 
-		wp_reset_postdata();
-		endif;
-		?>
-	  </ul>
-</div>
+		<ul class="slides">
+		   <?php
+	    		$flexslider_query = new WP_Query(array( 
+	    			'posts_per_page' => 5, // Shows 5 posts
+	    			'orderby' => 'date', // Posts are ordered by date
+	    			'ignore_sticky_posts' => 1 // Ignores sticky post
+	    			) );
+
+	    		// Query to show recent posts
+	    		if ($flexslider_query->have_posts()): while ($flexslider_query->have_posts()): $flexslider_query->the_post(); ?>
+	    			<li>
+		    			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+		        			<?php the_post_thumbnail(); ?>
+		    			</a>
+	    			</li>
+			<?php 
+			endwhile; 
+			wp_reset_postdata(); // Resets Post Data
+			endif;
+			wp_reset_query(); // Ends the query
+			?>
+		</ul>
+	</div><!-- End Flexslider -->
 
 <?php
 get_footer();
