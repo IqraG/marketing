@@ -21,7 +21,7 @@ function mrkting_settings_init() {
 
 	//Allows users to enter their name in the Footer
 	add_settings_field( 
-	'mrkting_text_field',
+	'mrkting_text_field', // Adds a text field
 	'Enter Your Name', // Field to enter name
 	'mrkting_text_field_render',
 	'theme_options',
@@ -35,7 +35,7 @@ function mrkting_settings_init() {
 	}
 
 	//Option to turn to header type
-	add_settings_field( 'mrkting_radio_field', 
+	add_settings_field( 'mrkting_radio_field', // Adds a radio field
 		'Choose Header Font for Front Page', 
 		'mrkting_radio_field_render', 
 		'theme_options', 
@@ -54,7 +54,7 @@ function mrkting_settings_init() {
 	}
 
 	//Option to turn on/off image on the bottom of pages
-	add_settings_field( 
+	add_settings_field( // Adds a checkbox field
 		'mrkting_checkbox_image', 
 		'Page Image', 
 		'mrkting_checkbox_image_render', 
@@ -67,7 +67,7 @@ function mrkting_settings_init() {
 		<input type="checkbox" name="mrkting_options_settings[mrkting_checkbox_image]" 
 			<?php if(isset($options['mrkting_checkbox_image'])) checked( 'on', ($options['mrkting_checkbox_image']) ) ;?> 
 				value="on" />
-		<label>Turn it On</label> 
+		<label>Turn it On</label>
 		<?php
 	}
 
@@ -84,6 +84,7 @@ function mrkting_settings_init() {
 	<?php
 	}
 }
+// Action Hook to call options page
 add_action( 'admin_init', 'mrkting_settings_init' );
 
 
