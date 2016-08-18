@@ -358,7 +358,7 @@ big {
 #primary {
 	background: rgba(179, 222, 101, 0.8);
 	border-radius: 5em;
-	border: 1em double #774837;;
+	border: 1em double #774837;
 	float: left;
 	padding: 2.25em;
 	margin: 2em 3em;
@@ -655,6 +655,10 @@ a:active {
 .main-navigation li {
 	border-right: 3px solid #774837;
 	display: inline-block;
+}
+
+.main-navigation li:last-child {
+	border-right: none;
 }
 
 .main-navigation li:hover {
