@@ -1,6 +1,6 @@
 === Marketing ===
 
-Contributors: automattic
+Contributors: Iqra Ghazi
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0
@@ -13,7 +13,19 @@ A starter theme called Marketing, or underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called Marketing, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+This theme was created based on underscore's starter themes. Created for marketers looking for the greener side of things. One can truly show their "growing potential" with this theme.
+
+== About the Theme ==
+
+The homepage will display only the most recent Sticky Post. Users can set sticky post by choosing the option under Visibility to make the post stick. 
+
+Theme also comes with a slider at the bottom of the homepage that will display the featured image of the four most recent posts. By clicking on the image the user will be re-directed to post.
+
+There is a custom post type that comes with this theme called "Marketing" where users can create their specified Marketing posts in that area.
+
+== Plugins ==
+
+Theme works with the Plugin: Marketing Plugin.
 
 == Installation ==
 
@@ -21,16 +33,15 @@ Hi. I'm a starter theme called Marketing, or underscores, if you like. I'm a the
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
 Marketing includes support for Infinite Scroll in Jetpack.
 
-== Changelog ==
+== Theme Options ==
 
-= 1.0 - May 12 2015 =
-* Initial release
+Users can change the following options by going to the Theme Options Pge:
+
+* Add their name in the footer.
+* Choose one of three fonts for their content on the homepage.
+* Choose to display the theme image on the bottom of all Pages.
 
 == Credits ==
 
