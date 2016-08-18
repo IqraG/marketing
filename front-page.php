@@ -18,10 +18,11 @@ get_sidebar(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php 
+				// Displays only one sticky post
 				$args = array(
-					'posts_per_page' => 1,
-					'post__in'  => get_option( 'sticky_posts' ),
-					'ignore_sticky_posts' => 1
+					'posts_per_page' => 1, // Shows only 1 post
+					'post__in'  => get_option( 'sticky_posts' ), // Displays only sticky posts
+					'ignore_sticky_posts' => 1 // Ignores all other sticky posts
 				);
 				$query = new WP_Query( $args );
 
@@ -39,18 +40,23 @@ get_sidebar(); ?>
 	</div><!-- #primary -->
 	<div class="flexslider">
 	  <ul class="slides">
-	    <li>
-	      <img src="<?php echo get_template_directory_uri() ?>/imgs/parsley.jpg" />
-	    </li>
-	    <li>
-	      <img src="<?php echo get_template_directory_uri() ?>/imgs/herbs.jpg" />
-	    </li>
-	    <li>
-	      <img src="<?php echo get_template_directory_uri() ?>/imgs/spoon.jpg" />
-	    </li>
-	    <li>
-	      <img src="<?php echo get_template_directory_uri() ?>/imgs/basket.jpg" />
-	    </li>
+	   <?php
+    		$flexslider_query = new WP_Query(array( 
+    			'posts_per_page' => 5,
+    			'orderby' => 'date',
+    			'ignore_sticky_posts' => 1
+    			) );
+    		if ($flexslider_query->have_posts()): while ($flexslider_query->have_posts()): $flexslider_query->the_post(); ?>
+    			<li>
+	    			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+	        			<?php the_post_thumbnail(); ?>
+	    			</a>
+    			</li>
+		<?php 
+		endwhile; 
+		wp_reset_postdata();
+		endif;
+		?>
 	  </ul>
 </div>
 
