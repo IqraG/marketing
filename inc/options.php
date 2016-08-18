@@ -16,7 +16,7 @@ function mrkting_settings_init() {
 	);
 	function mrkting_options_page_callback() { 
 		// Options page description
-		echo 'You can enter your name in the footer, choose to display page image, and choose font for homepage content';
+		echo 'You can enter your name in the footer, choose font for homepage content, and choose to display page image, ';
 	}
 
 	//Allows users to enter their name in the Footer
