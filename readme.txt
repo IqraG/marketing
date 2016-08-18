@@ -19,7 +19,7 @@ This theme was created based on underscore's starter themes. Created for markete
 
 The homepage will display only the most recent Sticky Post. Users can set sticky post by choosing the option under Visibility to make the post stick. 
 
-Theme also comes with a slider at the bottom of the homepage that will display the featured image of the four most recent posts. By clicking on the image the user will be re-directed to post.
+The theme also includes a slider, that appears at the bottom of the homepage that will display the featured image of the four most recent posts. By clicking on the image the user will be re-directed to post.
 
 There is a custom post type that comes with this theme called "Marketing" where users can create their specified Marketing posts in that area.
 
@@ -42,6 +42,10 @@ Users can change the following options by going to the Theme Options Pge:
 * Add their name in the footer.
 * Choose one of three fonts for their content on the homepage.
 * Choose to display the theme image on the bottom of all Pages.
+
+== Theme Menu ==
+
+To create the menu users must first create a menu under the Menu tab.  After the user can put that menu into the sidebar for it to appear on the site.
 
 == Credits ==
 
