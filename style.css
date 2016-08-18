@@ -363,7 +363,7 @@ big {
 	padding: 2.25em;
 	margin: 2em 3em;
 	max-width: 960px;
-	width: 90%;
+	width: 100%;
 }
 
 #secondary {
@@ -372,8 +372,8 @@ big {
 	border-radius: 0.6em;
 	float: left;
 	margin-top: 1px;
-	max-width: 300px;
-	width: 100%;
+	max-width: 290px;
+	width: 90%;
 }
 
 /*--------------------------------------------------------------
