@@ -45,7 +45,7 @@ get_sidebar(); ?>
 		<ul class="slides">
 		   <?php
 	    		$flexslider_query = new WP_Query(array( 
-	    			'posts_per_page' => 5, // Shows 5 posts
+	    			'posts_per_page' => 10, // Shows 10 posts
 	    			'orderby' => 'date', // Posts are ordered by date
 	    			'ignore_sticky_posts' => 1 // Ignores sticky post
 	    			) );

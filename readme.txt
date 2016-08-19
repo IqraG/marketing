@@ -21,7 +21,7 @@ The homepage will display only the most recent Sticky Post. Users can set sticky
 
 The theme also includes a slider, that appears at the bottom of the homepage that will display the featured image of the four most recent posts. By clicking on the image the user will be re-directed to post.
 
-There is a custom post type that comes with this theme called "Marketing" where users can create their specified Marketing posts in that area.
+There is a custom post type that comes with this theme called "Marketing" where users can create their specified Marketing posts in that area. To activate the posts, users must go under Settings->Permalinks->Save Changes. Otherwise trying to view the posts will result in an unable to find page error.
 
 == Plugins ==
 
